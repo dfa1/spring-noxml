@@ -1,6 +1,5 @@
 package com.humaorie.noxml;
 
-import com.humaorie.noxml.CoreConfiguration;
 import com.humaorie.noxml.webapp.IndexController;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

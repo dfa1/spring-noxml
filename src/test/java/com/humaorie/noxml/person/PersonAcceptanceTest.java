@@ -1,6 +1,7 @@
 package com.humaorie.noxml.person;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,11 +26,11 @@ public class PersonAcceptanceTest {
     }
 
     @Test
+    @Ignore("requires a dbms")
     public void canSaveAPerson() {
         final NewPersonDto newPersonDto = new NewPersonDto();
         newPersonDto.setName("mario");
         final PersonDto personDto = personFacade.createPerson(newPersonDto);
-
         Assert.assertEquals("mario", personDto.getName());
     }
 }
